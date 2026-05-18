@@ -8,6 +8,7 @@ jobs:
   deploy:
     name: Deploy site via FTP
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -16,15 +17,23 @@ jobs:
         run: sudo apt-get install -y lftp
 
       - name: Deploy via FTP
+        env:
+          FTP_HOST: ${{ secrets.HOSTINGER_HOST }}
+          FTP_USER: ${{ secrets.HOSTINGER_USER }}
+          FTP_PASS: ${{ secrets.HOSTINGER_PASSWORD }}
+          FTP_DIR: ${{ secrets.HOSTINGER_REMOTE_DIR }}
         run: |
-          lftp -e "
-            set ftp:ssl-allow no;
-            set ssl:verify-certificate no;
-            open ftp://${{ secrets.HOSTINGER_HOST }};
-            user ${{ secrets.HOSTINGER_USER }} ${{ secrets.HOSTINGER_PASSWORD }};
-            mirror --reverse --delete --verbose --parallel=5 ./ ${{ secrets.HOSTINGER_REMOTE_DIR }};
-            quit
-          "
+          cat > /tmp/deploy.lftp << EOF
+          set ftp:ssl-allow no
+          set ssl:verify-certificate no
+          set net:timeout 30
+          set net:max-retries 3
+          open ftp://${FTP_HOST}
+          user ${FTP_USER} ${FTP_PASS}
+          mirror --reverse --delete --parallel=5 ./ ${FTP_DIR}
+          quit
+          EOF
+          lftp -f /tmp/deploy.lftp
 
       - name: Deployment finished
         run: echo "Deployment to Hostinger complete"
