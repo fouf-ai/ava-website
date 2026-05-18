@@ -19,58 +19,7 @@ jobs:
           FTP_USER: ${{ secrets.HOSTINGER_USER }}
           FTP_PASS: ${{ secrets.HOSTINGER_PASSWORD }}
           FTP_DIR: ${{ secrets.HOSTINGER_REMOTE_DIR }}
-        run: |
-          python3 - << 'PYEOF'
-          import ftplib, os, sys
-          from pathlib import Path
-
-          host     = os.environ['FTP_HOST']
-          user     = os.environ['FTP_USER']
-          password = os.environ['FTP_PASS']
-          base     = os.environ['FTP_DIR'].strip('/')
-
-          SKIP = {'.git', '.github'}
-
-          print(f"Connecting to {host} ...")
-          ftp = ftplib.FTP()
-          ftp.connect(host, 21, timeout=60)
-          ftp.login(user, password)
-          ftp.set_pasv(True)
-          print("Connected.")
-
-          made = set()
-          def mkdirs(path):
-              if path in made: return
-              parts = path.split('/')
-              for i in range(1, len(parts)+1):
-                  d = '/'.join(parts[:i])
-                  if d and d not in made:
-                      try: ftp.mkd(d)
-                      except: pass
-                      made.add(d)
-
-          mkdirs(base)
-
-          ok, fail = 0, []
-          for f in sorted(Path('.').rglob('*')):
-              if f.is_dir(): continue
-              if any(p in SKIP for p in f.parts): continue
-              rel = str(f.relative_to('.')).replace('\\', '/')
-              if rel.startswith('.'): continue
-              remote = f"{base}/{rel}"
-              mkdirs(remote.rsplit('/',1)[0])
-              try:
-                  ftp.storbinary(f'STOR {remote}', open(f,'rb'))
-                  print(f"  OK  {rel}")
-                  ok += 1
-              except Exception as e:
-                  print(f"  ERR {rel}: {e}", file=sys.stderr)
-                  fail.append(rel)
-
-          ftp.quit()
-          print(f"\nDone: {ok} uploaded, {len(fail)} failed")
-          if fail: sys.exit(1)
-          PYEOF
+        run: python3 scripts/ftp_deploy.py
 
       - name: Deployment finished
         run: echo "Deployment complete — site live on africanvisionaries.org"
