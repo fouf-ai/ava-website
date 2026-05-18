@@ -1,0 +1,15 @@
+# robots.txt — African Visionaries Alliance
+# https://ava-africa.me
+
+User-agent: *
+Allow: /
+
+# Disallow technical / non-content paths
+Disallow: /assets/documents/
+Disallow: /data/
+
+# 404 page should not be indexed
+Disallow: /404
+
+# Sitemap
+Sitemap: https://ava-africa.me/sitemap.xml

@@ -1,0 +1,673 @@
+{
+  "fr": {
+    "meta": {
+      "siteName": "African Visionaries Alliance",
+      "tagline": "Voir plus loin. Agir plus vite. Bâtir l'Afrique.",
+      "language": "Français"
+    },
+    "nav": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "programs": "Nos Programmes",
+      "pathways": "AVA Pathways",
+      "academy": "AVA Academy",
+      "hub": "Opportunity Hub",
+      "opportunities": "Opportunités",
+      "team": "Équipe",
+      "documents": "Documents",
+      "contact": "Contact",
+      "skipToContent": "Aller au contenu principal",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu"
+    },
+    "hero": {
+      "tagline": "Voir plus loin. Agir plus vite. Bâtir l'Afrique.",
+      "subtitle": "L'African Visionaries Alliance dote les étudiants et jeunes professionnels africains des connaissances, de l'accompagnement et des connexions nécessaires pour accéder aux opportunités internationales d'éducation, de bourse et d'emploi — et pour transformer ces opportunités en mobilité professionnelle mesurable.",
+      "ctaPrimary": "Postuler à AVA Pathways",
+      "ctaSecondary": "Explorer les Opportunités"
+    },
+    "pillars": {
+      "heading": "Nos quatre piliers",
+      "subheading": "Trois programmes ciblés. Un engagement de jeunesse. Aucune dispersion.",
+      "pathways": {
+        "title": "AVA Pathways",
+        "description": "Coaching de candidature personnalisé, en 1-on-1, pour étudiants et jeunes professionnels africains visant des bourses et programmes internationaux."
+      },
+      "academy": {
+        "title": "AVA Academy",
+        "description": "Plateforme d'e-learning certifié sur les compétences de candidature : rédaction d'essais, lettres de motivation, préparation aux entretiens."
+      },
+      "hub": {
+        "title": "AVA Opportunity Hub",
+        "description": "Catalogue multilingue (FR/EN/AR) de bourses, fellowships, stages et emplois ouverts à la jeunesse africaine."
+      },
+      "emergencies": {
+        "title": "Réponses aux Urgences Sociales",
+        "description": "Mobilisation jeunesse et coordination régionale dans les cinq régions d'Afrique."
+      }
+    },
+    "impact": {
+      "heading": "Notre point de départ",
+      "subheading": "Année 0. Les chiffres sont petits. Ils sont vrais.",
+      "stat1Value": "23",
+      "stat1Label": "étudiants accompagnés à ce jour",
+      "stat2Value": "2026",
+      "stat2Label": "première cohorte formelle",
+      "stat3Value": "4",
+      "stat3Label": "régions africaines couvertes",
+      "note": "Nous ne gonflons pas les chiffres. À mesure que les cohortes avancent, nous publierons ici des résultats mesurables et vérifiables."
+    },
+    "founder": {
+      "heading": "Mot du Fondateur",
+      "name": "Jean-Lucien Fouf-Kagna Grebaye",
+      "role": "Président & Fondateur",
+      "text": "AVA est née d'une conviction simple : trop de jeunes Africains brillants passent à côté d'opportunités internationales par manque d'information, d'accompagnement ou de réseau — pas par manque de talent. Nous construisons ce qui nous a manqué.",
+      "cta": "En savoir plus sur AVA"
+    },
+    "newsletter": {
+      "heading": "Restez informés",
+      "subheading": "Une lettre mensuelle. Pas de spam. Désinscription en un clic.",
+      "placeholder": "votre.email@exemple.com",
+      "button": "S'abonner",
+      "consent": "En vous abonnant, vous acceptez de recevoir nos communications."
+    },
+    "about": {
+      "heading": "À Propos d'AVA",
+      "subheading": "Association panafricaine à but non lucratif. Indépendante, apolitique, non confessionnelle.",
+      "missionTitle": "Mission",
+      "missionText": "L'African Visionaries Alliance dote les étudiants et jeunes professionnels africains des connaissances, de l'accompagnement et des connexions nécessaires pour accéder aux opportunités internationales d'éducation, de bourse et d'emploi — et pour transformer ces opportunités en mobilité professionnelle mesurable.",
+      "visionTitle": "Vision 2030",
+      "visionText": "Devenir la plateforme panafricaine de référence pour la navigation des bourses et opportunités, avec des résultats mesurables dans chaque région d'Afrique.",
+      "doesTitle": "Ce qu'AVA fait",
+      "doesNotTitle": "Ce qu'AVA ne fait pas",
+      "doesItems": [
+        "Catalogue multilingue d'opportunités internationales (Opportunity Hub)",
+        "Coaching de candidature personnalisé 1-on-1 (AVA Pathways)",
+        "Formation certifiée aux compétences de candidature (AVA Academy)"
+      ],
+      "doesNotItems": [
+        "Pas d'opérations humanitaires de terrain",
+        "Pas de plaidoyer politique partisan",
+        "Pas d'incubation de startups ni de hackathons",
+        "Pas de conseil technologique généraliste"
+      ],
+      "valuesTitle": "Valeurs fondatrices",
+      "valuesIntro": "Sept principes inscrits à l'Article 4 de notre Charte.",
+      "values": [
+        { "title": "Auto-détermination africaine", "description": "La jeunesse africaine définit ses propres priorités." },
+        { "title": "Discipline de la focalisation", "description": "Trois programmes. Pas de dispersion." },
+        { "title": "Transparence", "description": "Documents publics. Décisions traçables." },
+        { "title": "Équité et inclusion", "description": "Minimum 40% de femmes dans la gouvernance." },
+        { "title": "Multilinguisme", "description": "Français, anglais, arabe — toutes nos opérations." },
+        { "title": "Intégrité", "description": "Pas d'inflation des résultats. Pas de promesses creuses." },
+        { "title": "Redevabilité aux résultats", "description": "Mobilité professionnelle mesurable, pas du marketing d'impact." }
+      ],
+      "legalTitle": "Mentions légales",
+      "legalItems": [
+        "Statut : Association panafricaine à but non lucratif",
+        "Cadre légal : Ordonnance n° 66/024 du 21 février 1966 (République centrafricaine)",
+        "Siège fondateur : Avenue Barthélemy Boganda, Bangui, République centrafricaine",
+        "Enregistrement officiel en cours"
+      ],
+      "governanceTitle": "Structure de gouvernance",
+      "governanceIntro": "Quinze postes répartis en quatre niveaux. Engagement : minimum 40% de femmes dans les Tiers 1, 2 et 3. Organisation dirigée par la jeunesse.",
+      "tier1": "Tier 1 — Bureau Exécutif",
+      "tier1Count": "5 postes",
+      "tier2": "Tier 2 — Direction Opérationnelle",
+      "tier2Count": "4 postes",
+      "tier3": "Tier 3 — Coordination Régionale",
+      "tier3Count": "4 postes",
+      "tier4": "Tier 4 — Organe Consultatif",
+      "tier4Count": "2 postes",
+      "downloadsTitle": "Téléchargements",
+      "downloadCharter": "Télécharger la Charte (PDF)",
+      "downloadStatutes": "Télécharger les Statuts (PDF)",
+      "downloadRegulations": "Télécharger le Règlement Intérieur (PDF)"
+    },
+    "team": {
+      "heading": "Notre Équipe",
+      "subheading": "Quinze postes. Quatre tiers. Une organisation dirigée par la jeunesse africaine.",
+      "tier1Name": "Bureau Exécutif",
+      "tier2Name": "Direction Opérationnelle",
+      "tier3Name": "Coordination Régionale",
+      "tier4Name": "Organe Consultatif",
+      "commitmentNote": "AVA s'engage à un minimum de 40% de femmes dans toutes les fonctions de direction (Tiers 1, 2 et 3).",
+      "openPosition": "Poste à pourvoir",
+      "openPositionNote": "Les recrutements sont en cours conformément aux Statuts."
+    },
+    "opportunities": {
+      "heading": "Opportunity Hub",
+      "subheading": "Catalogue multilingue de bourses, fellowships, stages et emplois — vérifié, actualisé, panafricain.",
+      "filtersHeading": "Filtrer les opportunités",
+      "filterAll": "Tout",
+      "filterType": "Type",
+      "filterRegion": "Région",
+      "filterLevel": "Niveau",
+      "filterLanguage": "Langue",
+      "filterFunding": "Financement",
+      "resetFilters": "Réinitialiser",
+      "resultsCount": "résultats",
+      "noResults": "Aucune opportunité ne correspond aux filtres sélectionnés.",
+      "deadline": "Date limite",
+      "daysLeft": "jours restants",
+      "expired": "Clôturée",
+      "learnMore": "En savoir plus",
+      "getCoached": "Être coaché sur cette candidature",
+      "types": {
+        "scholarship": "Bourse",
+        "fellowship": "Fellowship",
+        "internship": "Stage",
+        "job": "Emploi",
+        "training": "Formation"
+      },
+      "regions": {
+        "west": "Afrique de l'Ouest",
+        "central": "Afrique Centrale",
+        "east": "Afrique de l'Est",
+        "north": "Afrique du Nord",
+        "southern": "Afrique Australe",
+        "panafrican": "Panafricain"
+      },
+      "levels": {
+        "bachelor": "Licence",
+        "masters": "Master",
+        "phd": "Doctorat",
+        "professional": "Professionnel"
+      },
+      "languages": {
+        "french": "Français",
+        "english": "Anglais",
+        "arabic": "Arabe"
+      },
+      "funding": {
+        "full": "Complet",
+        "partial": "Partiel",
+        "tuition": "Frais de scolarité"
+      }
+    },
+    "documents": {
+      "heading": "Documents Officiels",
+      "subheading": "Tous les documents constitutifs d'AVA sont publics, téléchargeables et opposables.",
+      "charterTitle": "La Charte AVA",
+      "charterDescription": "La Charte fixe la mission, la vision, les valeurs fondatrices et les limites de l'action d'AVA. Elle compte 12 articles principaux dont l'Article 7 qui définit explicitement ce qu'AVA ne fait pas.",
+      "charterMeta": "12 articles · adoption en cours",
+      "statutesTitle": "Statuts d'AVA",
+      "statutesDescription": "Les Statuts organisent juridiquement l'association en application de l'Ordonnance n° 66/024 du 21 février 1966 (République centrafricaine). Sept Titres, 25 articles : objet, membres, gouvernance, ressources, dissolution.",
+      "statutesMeta": "7 Titres · 25 articles",
+      "regulationsTitle": "Règlement Intérieur",
+      "regulationsDescription": "Le Règlement Intérieur précise les modalités opérationnelles : critères d'admission des bénéficiaires, code de conduite, procédures de candidature, gestion des conflits d'intérêts.",
+      "regulationsMeta": "11 chapitres",
+      "download": "Télécharger",
+      "format": "PDF",
+      "updated": "Mis à jour"
+    },
+    "footer": {
+      "tagline": "Bourses et opportunités pour la jeunesse africaine.",
+      "navHeading": "Navigation",
+      "programsHeading": "Programmes",
+      "contactHeading": "Contact",
+      "address": "Avenue Barthélemy Boganda",
+      "city": "Bangui, République centrafricaine",
+      "email": "contact@africanvisionaries.org",
+      "phone": "+236 72 54 51 21",
+      "followUs": "Suivez-nous",
+      "copyright": "African Visionaries Alliance. Tous droits réservés.",
+      "legal": "Mentions légales",
+      "privacy": "Politique de confidentialité",
+      "registration": "Enregistrement en cours · Ordonnance n° 66/024 (RCA)"
+    },
+    "notFound": {
+      "title": "Page introuvable",
+      "code": "404",
+      "message": "La page que vous cherchez n'existe pas ou a été déplacée.",
+      "cta": "Retour à l'accueil"
+    }
+  },
+  "en": {
+    "meta": {
+      "siteName": "African Visionaries Alliance",
+      "tagline": "See further. Act faster. Build Africa.",
+      "language": "English"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "programs": "Our Programs",
+      "pathways": "AVA Pathways",
+      "academy": "AVA Academy",
+      "hub": "Opportunity Hub",
+      "opportunities": "Opportunities",
+      "team": "Team",
+      "documents": "Documents",
+      "contact": "Contact",
+      "skipToContent": "Skip to main content",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "hero": {
+      "tagline": "See further. Act faster. Build Africa.",
+      "subtitle": "The African Visionaries Alliance equips African students and young professionals with the knowledge, mentorship and connections needed to access international scholarships, fellowships and employment opportunities — and to convert those opportunities into measurable professional mobility.",
+      "ctaPrimary": "Apply to AVA Pathways",
+      "ctaSecondary": "Explore Opportunities"
+    },
+    "pillars": {
+      "heading": "Our four pillars",
+      "subheading": "Three focused programs. One youth commitment. Zero scope creep.",
+      "pathways": {
+        "title": "AVA Pathways",
+        "description": "Personalised 1-on-1 application coaching for African students and young professionals targeting international scholarships and programs."
+      },
+      "academy": {
+        "title": "AVA Academy",
+        "description": "Certified e-learning platform on application skills: essay writing, motivation letters, interview preparation."
+      },
+      "hub": {
+        "title": "AVA Opportunity Hub",
+        "description": "Multilingual catalogue (FR/EN/AR) of scholarships, fellowships, internships and jobs open to African youth."
+      },
+      "emergencies": {
+        "title": "Youth Mobilisation",
+        "description": "Regional coordination across Africa's five regions and youth engagement in AVA's internal governance."
+      }
+    },
+    "impact": {
+      "heading": "Where we start",
+      "subheading": "Year 0. The numbers are small. They are real.",
+      "stat1Value": "23",
+      "stat1Label": "students supported to date",
+      "stat2Value": "2026",
+      "stat2Label": "first formal cohort",
+      "stat3Value": "4",
+      "stat3Label": "African regions covered",
+      "note": "We do not inflate numbers. As cohorts progress, we will publish measurable, verifiable results here."
+    },
+    "founder": {
+      "heading": "Founder's Note",
+      "name": "Jean-Lucien Fouf-Kagna Grebaye",
+      "role": "President & Founder",
+      "text": "AVA was born from a simple conviction: too many brilliant young Africans miss out on international opportunities for lack of information, mentorship or network — not for lack of talent. We are building what we did not have.",
+      "cta": "Learn more about AVA"
+    },
+    "newsletter": {
+      "heading": "Stay informed",
+      "subheading": "Monthly newsletter. No spam. One-click unsubscribe.",
+      "placeholder": "your.email@example.com",
+      "button": "Subscribe",
+      "consent": "By subscribing, you agree to receive our communications."
+    },
+    "about": {
+      "heading": "About AVA",
+      "subheading": "Pan-African non-profit association. Independent, non-partisan, non-denominational.",
+      "missionTitle": "Mission",
+      "missionText": "The African Visionaries Alliance equips African students and young professionals with the knowledge, mentorship and connections needed to access international scholarships, fellowships and employment opportunities — and to convert those opportunities into measurable professional mobility.",
+      "visionTitle": "Vision 2030",
+      "visionText": "To become the reference pan-African platform for navigating scholarships and opportunities, with measurable outcomes in every African region.",
+      "doesTitle": "What AVA does",
+      "doesNotTitle": "What AVA does not do",
+      "doesItems": [
+        "Multilingual catalogue of international opportunities (Opportunity Hub)",
+        "Personalised 1-on-1 application coaching (AVA Pathways)",
+        "Certified training in application skills (AVA Academy)"
+      ],
+      "doesNotItems": [
+        "No on-the-ground humanitarian operations",
+        "No partisan political advocacy",
+        "No startup incubation or hackathons",
+        "No general technology consulting"
+      ],
+      "valuesTitle": "Founding values",
+      "valuesIntro": "Seven principles enshrined in Article 4 of our Charter.",
+      "values": [
+        { "title": "African self-determination", "description": "African youth set their own priorities." },
+        { "title": "Discipline of focus", "description": "Three programs. No scope creep." },
+        { "title": "Transparency", "description": "Public documents. Traceable decisions." },
+        { "title": "Equity and inclusion", "description": "Minimum 40% women in governance." },
+        { "title": "Multilingualism", "description": "French, English, Arabic — across all operations." },
+        { "title": "Integrity", "description": "No inflated outcomes. No empty promises." },
+        { "title": "Accountability to results", "description": "Measurable professional mobility, not impact marketing." }
+      ],
+      "legalTitle": "Legal information",
+      "legalItems": [
+        "Status: Pan-African non-profit association",
+        "Legal framework: Ordinance No. 66/024 of 21 February 1966 (Central African Republic)",
+        "Founding seat: Avenue Barthélemy Boganda, Bangui, Central African Republic",
+        "Official registration in progress"
+      ],
+      "governanceTitle": "Governance structure",
+      "governanceIntro": "Fifteen positions across four tiers. Commitment: minimum 40% women in Tiers 1, 2 and 3. Youth-led organisation.",
+      "tier1": "Tier 1 — Executive Bureau",
+      "tier1Count": "5 positions",
+      "tier2": "Tier 2 — Operational Direction",
+      "tier2Count": "4 positions",
+      "tier3": "Tier 3 — Regional Coordination",
+      "tier3Count": "4 positions",
+      "tier4": "Tier 4 — Advisory Body",
+      "tier4Count": "2 positions",
+      "downloadsTitle": "Downloads",
+      "downloadCharter": "Download the Charter (PDF)",
+      "downloadStatutes": "Download the Statutes (PDF)",
+      "downloadRegulations": "Download the Internal Regulations (PDF)"
+    },
+    "team": {
+      "heading": "Our Team",
+      "subheading": "Fifteen positions. Four tiers. A youth-led African organisation.",
+      "tier1Name": "Executive Bureau",
+      "tier2Name": "Operational Direction",
+      "tier3Name": "Regional Coordination",
+      "tier4Name": "Advisory Body",
+      "commitmentNote": "AVA commits to a minimum of 40% women across all leadership positions (Tiers 1, 2 and 3).",
+      "openPosition": "Open position",
+      "openPositionNote": "Recruitment is under way in accordance with the Statutes."
+    },
+    "opportunities": {
+      "heading": "Opportunity Hub",
+      "subheading": "Multilingual catalogue of scholarships, fellowships, internships and jobs — verified, current, pan-African.",
+      "filtersHeading": "Filter opportunities",
+      "filterAll": "All",
+      "filterType": "Type",
+      "filterRegion": "Region",
+      "filterLevel": "Level",
+      "filterLanguage": "Language",
+      "filterFunding": "Funding",
+      "resetFilters": "Reset",
+      "resultsCount": "results",
+      "noResults": "No opportunity matches the selected filters.",
+      "deadline": "Deadline",
+      "daysLeft": "days left",
+      "expired": "Closed",
+      "learnMore": "Learn more",
+      "getCoached": "Get coached on this application",
+      "types": {
+        "scholarship": "Scholarship",
+        "fellowship": "Fellowship",
+        "internship": "Internship",
+        "job": "Job",
+        "training": "Training"
+      },
+      "regions": {
+        "west": "West Africa",
+        "central": "Central Africa",
+        "east": "East Africa",
+        "north": "North Africa",
+        "southern": "Southern Africa",
+        "panafrican": "Pan-African"
+      },
+      "levels": {
+        "bachelor": "Bachelor",
+        "masters": "Masters",
+        "phd": "PhD",
+        "professional": "Professional"
+      },
+      "languages": {
+        "french": "French",
+        "english": "English",
+        "arabic": "Arabic"
+      },
+      "funding": {
+        "full": "Full",
+        "partial": "Partial",
+        "tuition": "Tuition only"
+      }
+    },
+    "documents": {
+      "heading": "Official Documents",
+      "subheading": "All of AVA's constitutive documents are public, downloadable and binding.",
+      "charterTitle": "The AVA Charter",
+      "charterDescription": "The Charter sets out the mission, vision, founding values and the limits of AVA's action. It contains 12 main articles, including Article 7 which explicitly defines what AVA does not do.",
+      "charterMeta": "12 articles · adoption in progress",
+      "statutesTitle": "AVA Statutes",
+      "statutesDescription": "The Statutes legally organise the association under Ordinance No. 66/024 of 21 February 1966 (Central African Republic). Seven Titles, 25 articles: purpose, members, governance, resources, dissolution.",
+      "statutesMeta": "7 Titles · 25 articles",
+      "regulationsTitle": "Internal Regulations",
+      "regulationsDescription": "The Internal Regulations specify operational procedures: beneficiary admission criteria, code of conduct, application procedures, conflict-of-interest management.",
+      "regulationsMeta": "11 chapters",
+      "download": "Download",
+      "format": "PDF",
+      "updated": "Updated"
+    },
+    "footer": {
+      "tagline": "Scholarships and opportunities for African youth.",
+      "navHeading": "Navigation",
+      "programsHeading": "Programs",
+      "contactHeading": "Contact",
+      "address": "Avenue Barthélemy Boganda",
+      "city": "Bangui, Central African Republic",
+      "email": "contact@africanvisionaries.org",
+      "phone": "+236 72 54 51 21",
+      "followUs": "Follow us",
+      "copyright": "African Visionaries Alliance. All rights reserved.",
+      "legal": "Legal",
+      "privacy": "Privacy policy",
+      "registration": "Registration in progress · Ordinance No. 66/024 (CAR)"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "code": "404",
+      "message": "The page you are looking for does not exist or has been moved.",
+      "cta": "Back to home"
+    }
+  },
+  "ar": {
+    "meta": {
+      "siteName": "تحالف الرؤى الأفريقية",
+      "tagline": "رؤية أبعد. تحرّك أسرع. بناء أفريقيا.",
+      "language": "العربية"
+    },
+    "nav": {
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "programs": "برامجنا",
+      "pathways": "مسارات AVA",
+      "academy": "أكاديمية AVA",
+      "hub": "مركز الفرص",
+      "opportunities": "الفرص",
+      "team": "الفريق",
+      "documents": "الوثائق",
+      "contact": "تواصل",
+      "skipToContent": "الانتقال إلى المحتوى الرئيسي",
+      "openMenu": "فتح القائمة",
+      "closeMenu": "إغلاق القائمة"
+    },
+    "hero": {
+      "tagline": "رؤية أبعد. تحرّك أسرع. بناء أفريقيا.",
+      "subtitle": "يزوّد تحالف الرؤى الأفريقية الطلاب والشباب المهنيين الأفارقة بالمعرفة والإرشاد والروابط اللازمة للوصول إلى فرص التعليم والمنح والتوظيف الدولية، وتحويل هذه الفرص إلى حركة مهنية قابلة للقياس.",
+      "ctaPrimary": "التقديم لمسارات AVA",
+      "ctaSecondary": "استكشاف الفرص"
+    },
+    "pillars": {
+      "heading": "ركائزنا الأربع",
+      "subheading": "ثلاثة برامج مركّزة. التزام واحد بالشباب. لا تشتّت.",
+      "pathways": {
+        "title": "مسارات AVA",
+        "description": "إرشاد شخصي فردي في التقديم للطلاب والشباب المهنيين الأفارقة الذين يستهدفون المنح والبرامج الدولية."
+      },
+      "academy": {
+        "title": "أكاديمية AVA",
+        "description": "منصة تعليم إلكتروني معتمدة لمهارات التقديم: كتابة المقالات، رسائل الدافع، التحضير للمقابلات."
+      },
+      "hub": {
+        "title": "مركز فرص AVA",
+        "description": "كتالوج متعدد اللغات (فرنسي/إنجليزي/عربي) للمنح الدراسية والزمالات والتدريب والوظائف المتاحة للشباب الأفريقي."
+      },
+     "emergencies": {
+  "title": "الاستجابة للطوارئ الاجتماعية",
+  "description": "تعبئة الشباب لمواجهة الطوارئ الاجتماعية الأفريقية: الأزمات التعليمية، تهجير الطلاب، انقطاع الوصول إلى الفرص."
+    },
+    "impact": {
+      "heading": "من أين نبدأ",
+      "subheading": "السنة صفر. الأرقام صغيرة. وهي حقيقية.",
+      "stat1Value": "23",
+      "stat1Label": "طالباً تم دعمهم حتى الآن",
+      "stat2Value": "2026",
+      "stat2Label": "أول دفعة رسمية",
+      "stat3Value": "4",
+      "stat3Label": "مناطق أفريقية مغطاة",
+      "note": "نحن لا نبالغ في الأرقام. مع تقدم الدفعات، سننشر هنا نتائج قابلة للقياس والتحقق."
+    },
+    "founder": {
+      "heading": "كلمة المؤسس",
+      "name": "جون-لوسيان فوف-كاغنا غريبايي",
+      "role": "الرئيس والمؤسس",
+      "text": "وُلد AVA من قناعة بسيطة: كثير من الشباب الأفارقة الموهوبين يفوّتون الفرص الدولية بسبب نقص المعلومات أو التوجيه أو الشبكات، لا بسبب نقص الموهبة. نحن نبني ما افتقرنا إليه.",
+      "cta": "اعرف المزيد عن AVA"
+    },
+    "newsletter": {
+      "heading": "ابقَ على اطلاع",
+      "subheading": "نشرة شهرية. بلا إزعاج. إلغاء الاشتراك بنقرة واحدة.",
+      "placeholder": "بريدك@مثال.com",
+      "button": "اشتراك",
+      "consent": "بالاشتراك، فإنك توافق على تلقي مراسلاتنا."
+    },
+    "about": {
+      "heading": "عن AVA",
+      "subheading": "جمعية أفريقية شاملة غير ربحية. مستقلة، غير حزبية، غير طائفية.",
+      "missionTitle": "المهمة",
+      "missionText": "يزوّد تحالف الرؤى الأفريقية الطلاب والشباب المهنيين الأفارقة بالمعرفة والإرشاد والروابط اللازمة للوصول إلى الفرص الدولية للتعليم والمنح والتوظيف، وتحويل هذه الفرص إلى حركة مهنية قابلة للقياس.",
+      "visionTitle": "رؤية 2030",
+      "visionText": "أن نصبح المنصة الأفريقية المرجعية للتنقل بين المنح والفرص، بنتائج قابلة للقياس في كل منطقة أفريقية.",
+      "doesTitle": "ما تقوم به AVA",
+      "doesNotTitle": "ما لا تقوم به AVA",
+      "doesItems": [
+        "كتالوج متعدد اللغات للفرص الدولية (مركز الفرص)",
+        "إرشاد شخصي فردي في التقديم (مسارات AVA)",
+        "تدريب معتمد على مهارات التقديم (أكاديمية AVA)"
+      ],
+      "doesNotItems": [
+        "لا عمليات إنسانية ميدانية",
+        "لا مناصرة سياسية حزبية",
+        "لا احتضان للشركات الناشئة ولا هاكاثونات",
+        "لا استشارات تكنولوجية عامة"
+      ],
+      "valuesTitle": "القيم المؤسِّسة",
+      "valuesIntro": "سبعة مبادئ مكرّسة في المادة 4 من ميثاقنا.",
+      "values": [
+        { "title": "تقرير المصير الأفريقي", "description": "الشباب الأفريقي يحدد أولوياته بنفسه." },
+        { "title": "انضباط التركيز", "description": "ثلاثة برامج. بلا تشتّت." },
+        { "title": "الشفافية", "description": "وثائق علنية. قرارات قابلة للتتبع." },
+        { "title": "الإنصاف والشمول", "description": "حد أدنى 40% من النساء في الحوكمة." },
+        { "title": "تعدد اللغات", "description": "الفرنسية، الإنجليزية، العربية — في كل عملياتنا." },
+        { "title": "النزاهة", "description": "لا نتائج مضخّمة. لا وعود فارغة." },
+        { "title": "المساءلة عن النتائج", "description": "حركة مهنية قابلة للقياس، لا تسويق للأثر." }
+      ],
+      "legalTitle": "المعلومات القانونية",
+      "legalItems": [
+        "الوضع: جمعية أفريقية شاملة غير ربحية",
+        "الإطار القانوني: المرسوم رقم 66/024 الصادر في 21 فبراير 1966 (جمهورية أفريقيا الوسطى)",
+        "المقر المؤسس: شارع برتيليمي بوغاندا، بانغي، جمهورية أفريقيا الوسطى",
+        "التسجيل الرسمي قيد الإنجاز"
+      ],
+      "governanceTitle": "هيكل الحوكمة",
+      "governanceIntro": "خمسة عشر منصباً موزعة على أربعة مستويات. التزام: حد أدنى 40% من النساء في المستويات 1 و2 و3. منظمة يقودها الشباب.",
+      "tier1": "المستوى 1 — المكتب التنفيذي",
+      "tier1Count": "5 مناصب",
+      "tier2": "المستوى 2 — الإدارة التشغيلية",
+      "tier2Count": "4 مناصب",
+      "tier3": "المستوى 3 — التنسيق الإقليمي",
+      "tier3Count": "4 مناصب",
+      "tier4": "المستوى 4 — الهيئة الاستشارية",
+      "tier4Count": "2 منصب",
+      "downloadsTitle": "تنزيلات",
+      "downloadCharter": "تحميل الميثاق (PDF)",
+      "downloadStatutes": "تحميل النظام الأساسي (PDF)",
+      "downloadRegulations": "تحميل اللائحة الداخلية (PDF)"
+    },
+    "team": {
+      "heading": "فريقنا",
+      "subheading": "خمسة عشر منصباً. أربعة مستويات. منظمة أفريقية يقودها الشباب.",
+      "tier1Name": "المكتب التنفيذي",
+      "tier2Name": "الإدارة التشغيلية",
+      "tier3Name": "التنسيق الإقليمي",
+      "tier4Name": "الهيئة الاستشارية",
+      "commitmentNote": "تلتزم AVA بحد أدنى 40% من النساء في جميع المناصب القيادية (المستويات 1 و2 و3).",
+      "openPosition": "منصب شاغر",
+      "openPositionNote": "التوظيف جارٍ وفقاً للنظام الأساسي."
+    },
+    "opportunities": {
+      "heading": "مركز الفرص",
+      "subheading": "كتالوج متعدد اللغات للمنح والزمالات والتدريب والوظائف — موثَّق، محدَّث، أفريقي شامل.",
+      "filtersHeading": "تصفية الفرص",
+      "filterAll": "الكل",
+      "filterType": "النوع",
+      "filterRegion": "المنطقة",
+      "filterLevel": "المستوى",
+      "filterLanguage": "اللغة",
+      "filterFunding": "التمويل",
+      "resetFilters": "إعادة تعيين",
+      "resultsCount": "نتائج",
+      "noResults": "لا توجد فرصة مطابقة للمرشحات المختارة.",
+      "deadline": "الموعد النهائي",
+      "daysLeft": "أيام متبقية",
+      "expired": "مغلق",
+      "learnMore": "المزيد",
+      "getCoached": "احصل على إرشاد حول هذا الطلب",
+      "types": {
+        "scholarship": "منحة دراسية",
+        "fellowship": "زمالة",
+        "internship": "تدريب",
+        "job": "وظيفة",
+        "training": "تدريب مهني"
+      },
+      "regions": {
+        "west": "غرب أفريقيا",
+        "central": "وسط أفريقيا",
+        "east": "شرق أفريقيا",
+        "north": "شمال أفريقيا",
+        "southern": "جنوب أفريقيا",
+        "panafrican": "عموم أفريقيا"
+      },
+      "levels": {
+        "bachelor": "بكالوريوس",
+        "masters": "ماجستير",
+        "phd": "دكتوراه",
+        "professional": "مهني"
+      },
+      "languages": {
+        "french": "الفرنسية",
+        "english": "الإنجليزية",
+        "arabic": "العربية"
+      },
+      "funding": {
+        "full": "كامل",
+        "partial": "جزئي",
+        "tuition": "رسوم دراسية فقط"
+      }
+    },
+    "documents": {
+      "heading": "الوثائق الرسمية",
+      "subheading": "جميع وثائق AVA التأسيسية علنية وقابلة للتنزيل وملزِمة.",
+      "charterTitle": "ميثاق AVA",
+      "charterDescription": "يحدد الميثاق المهمة والرؤية والقيم المؤسِّسة وحدود عمل AVA. يحتوي على 12 مادة رئيسية، منها المادة 7 التي تحدد صراحةً ما لا تقوم به AVA.",
+      "charterMeta": "12 مادة · الاعتماد قيد الإنجاز",
+      "statutesTitle": "النظام الأساسي لـ AVA",
+      "statutesDescription": "ينظم النظام الأساسي الجمعية قانونياً بموجب المرسوم رقم 66/024 الصادر في 21 فبراير 1966 (جمهورية أفريقيا الوسطى). سبعة أبواب، 25 مادة.",
+      "statutesMeta": "7 أبواب · 25 مادة",
+      "regulationsTitle": "اللائحة الداخلية",
+      "regulationsDescription": "تحدد اللائحة الداخلية الإجراءات التشغيلية: معايير قبول المستفيدين، مدونة السلوك، إجراءات التقديم، إدارة تضارب المصالح.",
+      "regulationsMeta": "11 فصلاً",
+      "download": "تحميل",
+      "format": "PDF",
+      "updated": "محدَّث"
+    },
+    "footer": {
+      "tagline": "منح وفرص للشباب الأفريقي.",
+      "navHeading": "التنقل",
+      "programsHeading": "البرامج",
+      "contactHeading": "التواصل",
+      "address": "شارع برتيليمي بوغاندا",
+      "city": "بانغي، جمهورية أفريقيا الوسطى",
+      "email": "contact@africanvisionaries.org",
+      "phone": "+236 72 54 51 21",
+      "followUs": "تابعنا",
+      "copyright": "تحالف الرؤى الأفريقية. جميع الحقوق محفوظة.",
+      "legal": "إشعارات قانونية",
+      "privacy": "سياسة الخصوصية",
+      "registration": "التسجيل قيد الإنجاز · المرسوم رقم 66/024 (جمهورية أفريقيا الوسطى)"
+    },
+    "notFound": {
+      "title": "الصفحة غير موجودة",
+      "code": "404",
+      "message": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+      "cta": "العودة إلى الرئيسية"
+    }
+  }
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#035a42">
+
+  <title>À Propos — African Visionaries Alliance</title>
+  <meta name="description" content="Mission, vision, valeurs fondatrices et structure de gouvernance de l'African Visionaries Alliance — association panafricaine à but non lucratif basée en RCA.">
+
+  <link rel="canonical" href="https://ava-africa.me/about">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="African Visionaries Alliance">
+  <meta property="og:title" content="À Propos — African Visionaries Alliance">
+  <meta property="og:description" content="Association panafricaine à but non lucratif dédiée à la mobilité professionnelle des jeunes africains.">
+  <meta property="og:url" content="https://ava-africa.me/about">
+  <meta property="og:image" content="https://ava-africa.me/assets/images/logo/logo-ava.png">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="À Propos — AVA">
+  <meta name="twitter:description" content="Mission et gouvernance de l'African Visionaries Alliance.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN + config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ava-green-dark':  '#035a42',
+            'ava-green-light': '#19ab90',
+            'ava-gold':        '#fea61b',
+            'ava-red':         '#e72931',
+            'ava-brown':       '#492412',
+            'ava-ink':         '#1f2937',
+            'ava-grey':        '#6b7280',
+            'ava-mist':        '#f5f5f5',
+            'ava-paper':       '#ffffff',
+            'ava-line':        '#e5e7eb',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: { 'content': '1200px' }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- JSON-LD : AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "African Visionaries Alliance",
+    "alternateName": "AVA",
+    "url": "https://ava-africa.me",
+    "logo": "https://ava-africa.me/assets/images/logo/logo-ava.png",
+    "description": "Pan-African non-profit equipping African students and young professionals with the knowledge, mentorship and connections to access international scholarships and employment opportunities.",
+    "founder": { "@type": "Person", "name": "Jean-Lucien Fouf-Kagna Grebaye" },
+    "foundingDate": "2026",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenue Barthélemy Boganda",
+      "addressLocality": "Bangui",
+      "addressCountry": "CF"
+    }
+  }
+  </script>
+</head>
+
+<body class="font-body text-ava-ink antialiased bg-ava-paper">
+
+  <!-- Skip link -->
+  <a href="#main-content" class="skip-link" data-i18n="nav.skipToContent">Aller au contenu principal</a>
+
+  <!-- =================== HEADER =================== -->
+  <header class="site-header">
+    <div class="container-ava flex items-center justify-between py-4">
+      <a href="index" class="logo flex items-center gap-2" aria-label="African Visionaries Alliance — Accueil">
+        <img src="assets/images/logo/logo-ava.png" alt="Logo — African Visionaries Alliance" width="36" height="36" onerror="this.style.display='none'">
+        <span>AVA</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Navigation principale">
+        <a href="index" class="nav-link" data-nav-key="home" data-i18n="nav.home">Accueil</a>
+        <a href="about" class="nav-link is-active" data-nav-key="about" data-i18n="nav.about">À Propos</a>
+        <div class="dropdown">
+          <button type="button" class="nav-link inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+            <span data-i18n="nav.programs">Nos Programmes</span>
+            <i data-lucide="chevron-down" style="width:14px;height:14px;" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="about#pathways" role="menuitem" data-i18n="nav.pathways">AVA Pathways</a>
+            <a href="about#academy" role="menuitem" data-i18n="nav.academy">AVA Academy</a>
+            <a href="opportunities" role="menuitem" data-i18n="nav.hub">Opportunity Hub</a>
+          </div>
+        </div>
+        <a href="opportunities" class="nav-link" data-nav-key="opportunities" data-i18n="nav.opportunities">Opportunités</a>
+        <a href="team" class="nav-link" data-nav-key="team" data-i18n="nav.team">Équipe</a>
+        <a href="documents" class="nav-link" data-nav-key="documents" data-i18n="nav.documents">Documents</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" data-lang-switch="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang-switch="ar" aria-pressed="false">AR</button>
+        </div>
+
+        <button type="button" class="lg:hidden p-2 rounded-md hover:bg-ava-mist" data-mobile-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================== MOBILE DRAWER =================== -->
+  <div class="mobile-backdrop" data-mobile-backdrop aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-hidden="true" aria-label="Menu mobile">
+    <div class="flex items-center justify-between mb-6">
+      <span class="font-heading font-semibold text-ava-green-dark text-lg">AVA</span>
+      <button type="button" class="p-2 rounded-md hover:bg-ava-mist" data-mobile-close aria-label="Fermer">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1" aria-label="Navigation mobile">
+      <a href="index" class="nav-link py-2.5" data-i18n="nav.home">Accueil</a>
+      <a href="about" class="nav-link py-2.5 is-active" data-i18n="nav.about">À Propos</a>
+      <a href="opportunities" class="nav-link py-2.5" data-i18n="nav.opportunities">Opportunités</a>
+      <a href="team" class="nav-link py-2.5" data-i18n="nav.team">Équipe</a>
+      <a href="documents" class="nav-link py-2.5" data-i18n="nav.documents">Documents</a>
+    </nav>
+    <div class="mt-8 pt-6 border-t border-ava-line">
+      <p class="text-xs font-semibold uppercase tracking-wider text-ava-grey mb-3" data-i18n="nav.programs">Nos Programmes</p>
+      <a href="about#pathways" class="nav-link py-2 block" data-i18n="nav.pathways">AVA Pathways</a>
+      <a href="about#academy" class="nav-link py-2 block" data-i18n="nav.academy">AVA Academy</a>
+      <a href="opportunities" class="nav-link py-2 block" data-i18n="nav.hub">Opportunity Hub</a>
+    </div>
+  </aside>
+
+  <!-- =================== MAIN =================== -->
+  <main id="main-content">
+
+    <!-- PAGE HEADER -->
+    <section class="hero-bg">
+      <div class="container-ava py-16 md:py-20 relative z-10">
+        <p class="eyebrow mb-4"><span>African Visionaries Alliance</span></p>
+        <h1 class="font-heading text-4xl md:text-5xl font-semibold mb-4" style="color: var(--ava-green-dark);" data-i18n="about.heading">À Propos d'AVA</h1>
+        <p class="text-lg md:text-xl max-w-3xl leading-relaxed" style="color: var(--ava-grey);" data-i18n="about.subheading">Association panafricaine à but non lucratif. Indépendante, apolitique, non confessionnelle.</p>
+      </div>
+    </section>
+
+    <!-- MISSION & VISION -->
+    <section class="py-16 md:py-20">
+      <div class="container-ava">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <article class="card reveal">
+            <div class="pillar-icon mb-4" style="background: rgba(254, 166, 27, 0.15); color: var(--ava-gold);">
+              <i data-lucide="compass" aria-hidden="true"></i>
+            </div>
+            <h2 class="font-heading text-2xl mb-3" data-i18n="about.missionTitle">Mission</h2>
+            <p class="leading-relaxed" data-i18n="about.missionText">L'African Visionaries Alliance dote les étudiants et jeunes professionnels africains des connaissances, de l'accompagnement et des connexions nécessaires pour accéder aux opportunités internationales d'éducation, de bourse et d'emploi — et pour transformer ces opportunités en mobilité professionnelle mesurable.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="pillar-icon mb-4">
+              <i data-lucide="target" aria-hidden="true"></i>
+            </div>
+            <h2 class="font-heading text-2xl mb-3" data-i18n="about.visionTitle">Vision 2030</h2>
+            <p class="leading-relaxed" data-i18n="about.visionText">Devenir la plateforme panafricaine de référence pour la navigation des bourses et opportunités, avec des résultats mesurables dans chaque région d'Afrique.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOES vs DOES NOT — clé différenciatrice de la Charte Art. 7 -->
+    <section class="py-16 md:py-20" style="background: var(--ava-mist);">
+      <div class="container-ava">
+        <div class="mb-12 reveal">
+          <p class="eyebrow mb-4"><span>Charte Art. 7</span></p>
+          <h2 class="section-heading">Notre périmètre, sans ambiguïté</h2>
+          <p class="section-subheading">La discipline de la focalisation est une de nos sept valeurs fondatrices.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <article class="card reveal" style="border-left: 4px solid var(--ava-green-light);">
+            <h3 class="font-heading text-xl mb-4 flex items-center gap-2" style="color: var(--ava-green-dark);">
+              <i data-lucide="check-circle-2" aria-hidden="true" style="width:22px;height:22px;color: var(--ava-green-light);"></i>
+              <span data-i18n="about.doesTitle">Ce qu'AVA fait</span>
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-green-light);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesItems.0">Catalogue multilingue d'opportunités internationales (Opportunity Hub)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-green-light);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesItems.1">Coaching de candidature personnalisé 1-on-1 (AVA Pathways)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-green-light);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesItems.2">Formation certifiée aux compétences de candidature (AVA Academy)</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="border-left: 4px solid var(--ava-red);">
+            <h3 class="font-heading text-xl mb-4 flex items-center gap-2" style="color: var(--ava-brown);">
+              <i data-lucide="x-circle" aria-hidden="true" style="width:22px;height:22px;color: var(--ava-red);"></i>
+              <span data-i18n="about.doesNotTitle">Ce qu'AVA ne fait pas</span>
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <i data-lucide="minus" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-red);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesNotItems.0">Pas d'opérations humanitaires de terrain</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="minus" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-red);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesNotItems.1">Pas de plaidoyer politique partisan</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="minus" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-red);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesNotItems.2">Pas d'incubation de startups ni de hackathons</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="minus" aria-hidden="true" style="width:18px;height:18px;color: var(--ava-red);flex-shrink:0;margin-top:4px;"></i>
+                <span data-i18n="about.doesNotItems.3">Pas de conseil technologique généraliste</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS DETAIL — Pathways & Academy anchored sections -->
+    <section class="py-16 md:py-20">
+      <div class="container-ava">
+        <div class="mb-12 reveal">
+          <p class="eyebrow mb-4"><span>Programmes</span></p>
+          <h2 class="section-heading">Trois programmes, un parcours cohérent</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <article id="pathways" class="card card-hover pillar-card reveal scroll-mt-24">
+            <div class="pillar-icon"><i data-lucide="graduation-cap" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-2xl mb-3" data-i18n="pillars.pathways.title">AVA Pathways</h3>
+            <p class="text-sm leading-relaxed mb-4" style="color: var(--ava-grey);" data-i18n="pillars.pathways.description">Coaching de candidature personnalisé, en 1-on-1, pour étudiants et jeunes professionnels africains visant des bourses et programmes internationaux.</p>
+            <a href="mailto:contact@africanvisionaries.org?subject=AVA%20Pathways" class="btn btn-primary text-sm">
+              <i data-lucide="mail" aria-hidden="true" style="width:16px;height:16px;"></i>
+              <span>Postuler</span>
+            </a>
+          </article>
+
+          <article id="academy" class="card card-hover pillar-card reveal scroll-mt-24">
+            <div class="pillar-icon"><i data-lucide="book-open" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-2xl mb-3" data-i18n="pillars.academy.title">AVA Academy</h3>
+            <p class="text-sm leading-relaxed mb-4" style="color: var(--ava-grey);" data-i18n="pillars.academy.description">Plateforme d'e-learning certifié sur les compétences de candidature : rédaction d'essais, lettres de motivation, préparation aux entretiens.</p>
+            <span class="badge badge-funding"><i data-lucide="clock" aria-hidden="true" style="width:14px;height:14px;"></i> 2026 · à venir</span>
+          </article>
+
+          <article id="hub" class="card card-hover pillar-card reveal scroll-mt-24">
+            <div class="pillar-icon"><i data-lucide="globe" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-2xl mb-3" data-i18n="pillars.hub.title">AVA Opportunity Hub</h3>
+            <p class="text-sm leading-relaxed mb-4" style="color: var(--ava-grey);" data-i18n="pillars.hub.description">Catalogue multilingue (FR/EN/AR) de bourses, fellowships, stages et emplois ouverts à la jeunesse africaine.</p>
+            <a href="opportunities" class="btn btn-outline text-sm">
+              <span>Explorer</span>
+              <i data-lucide="arrow-right" aria-hidden="true" style="width:16px;height:16px;"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALEURS FONDATRICES (Charter Art. 4) -->
+    <section class="py-16 md:py-20" style="background: var(--ava-mist);">
+      <div class="container-ava">
+        <div class="mb-12 reveal">
+          <p class="eyebrow mb-4"><span>Charte Art. 4</span></p>
+          <h2 class="section-heading" data-i18n="about.valuesTitle">Valeurs fondatrices</h2>
+          <p class="section-subheading" data-i18n="about.valuesIntro">Sept principes inscrits à l'Article 4 de notre Charte.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- 7 values -->
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">01</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.0.title">Auto-détermination africaine</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.0.description">La jeunesse africaine définit ses propres priorités.</p>
+          </article>
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">02</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.1.title">Discipline de la focalisation</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.1.description">Trois programmes. Pas de dispersion.</p>
+          </article>
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">03</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.2.title">Transparence</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.2.description">Documents publics. Décisions traçables.</p>
+          </article>
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">04</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.3.title">Équité et inclusion</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.3.description">Minimum 40% de femmes dans la gouvernance.</p>
+          </article>
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">05</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.4.title">Multilinguisme</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.4.description">Français, anglais, arabe — toutes nos opérations.</p>
+          </article>
+          <article class="card reveal">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">06</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.5.title">Intégrité</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.5.description">Pas d'inflation des résultats. Pas de promesses creuses.</p>
+          </article>
+          <article class="card reveal md:col-span-2 lg:col-span-1">
+            <div class="text-3xl font-heading mb-2" style="color: var(--ava-gold);">07</div>
+            <h3 class="font-heading text-lg mb-2" data-i18n="about.values.6.title">Redevabilité aux résultats</h3>
+            <p class="text-sm" style="color: var(--ava-grey);" data-i18n="about.values.6.description">Mobilité professionnelle mesurable, pas du marketing d'impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE STRUCTURE -->
+    <section class="py-16 md:py-20">
+      <div class="container-ava">
+        <div class="mb-12 reveal">
+          <p class="eyebrow mb-4"><span>Statuts</span></p>
+          <h2 class="section-heading" data-i18n="about.governanceTitle">Structure de gouvernance</h2>
+          <p class="section-subheading" data-i18n="about.governanceIntro">Quinze postes répartis en quatre niveaux. Engagement : minimum 40% de femmes dans les Tiers 1, 2 et 3. Organisation dirigée par la jeunesse.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <article class="card reveal" style="border-top: 4px solid var(--ava-green-dark);">
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: var(--ava-gold);">Tier 1</p>
+            <h3 class="font-heading text-lg mb-1" data-i18n="about.tier1">Tier 1 — Bureau Exécutif</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--ava-grey);" data-i18n="about.tier1Count">5 postes</p>
+            <p class="text-sm" style="color: var(--ava-grey);">Président, Directeur Exécutif, Directeurs Programmes / Formation / Communication.</p>
+          </article>
+
+          <article class="card reveal" style="border-top: 4px solid var(--ava-green-light);">
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: var(--ava-gold);">Tier 2</p>
+            <h3 class="font-heading text-lg mb-1" data-i18n="about.tier2">Tier 2 — Direction Opérationnelle</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--ava-grey);" data-i18n="about.tier2Count">4 postes</p>
+            <p class="text-sm" style="color: var(--ava-grey);">Trésorier, Partenariats, Suivi & Évaluation, Plateforme technique.</p>
+          </article>
+
+          <article class="card reveal" style="border-top: 4px solid var(--ava-gold);">
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: var(--ava-gold);">Tier 3</p>
+            <h3 class="font-heading text-lg mb-1" data-i18n="about.tier3">Tier 3 — Coordination Régionale</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--ava-grey);" data-i18n="about.tier3Count">4 postes</p>
+            <p class="text-sm" style="color: var(--ava-grey);">Coordinateurs Afrique de l'Ouest, Centrale, Est, Nord & Australe.</p>
+          </article>
+
+          <article class="card reveal" style="border-top: 4px solid var(--ava-brown);">
+            <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color: var(--ava-gold);">Tier 4</p>
+            <h3 class="font-heading text-lg mb-1" data-i18n="about.tier4">Tier 4 — Organe Consultatif</h3>
+            <p class="text-sm font-medium mb-3" style="color: var(--ava-grey);" data-i18n="about.tier4Count">2 postes</p>
+            <p class="text-sm" style="color: var(--ava-grey);">Président du Conseil Consultatif, Représentant·e du Conseil de la Jeunesse.</p>
+          </article>
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="team" class="btn btn-outline">
+            <i data-lucide="users" aria-hidden="true" style="width:18px;height:18px;"></i>
+            <span data-i18n="nav.team">Équipe</span>
+            <i data-lucide="arrow-right" aria-hidden="true" style="width:16px;height:16px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENTIONS LÉGALES -->
+    <section class="py-16 md:py-20" style="background: var(--ava-green-dark); color: #fff;">
+      <div class="container-ava">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div class="reveal">
+            <p class="eyebrow mb-4" style="color: var(--ava-gold);"><span>RCA</span></p>
+            <h2 class="font-heading text-3xl md:text-4xl mb-4" style="color: #fff;" data-i18n="about.legalTitle">Mentions légales</h2>
+            <p class="leading-relaxed" style="color: rgba(255,255,255,0.85);">L'African Visionaries Alliance est constituée en application de l'Ordonnance n° 66/024 du 21 février 1966 de la République centrafricaine, relative aux associations.</p>
+          </div>
+
+          <ul class="space-y-4 reveal">
+            <li class="flex items-start gap-3 pb-4" style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <i data-lucide="building" aria-hidden="true" style="width:20px;height:20px;color: var(--ava-gold);flex-shrink:0;margin-top:3px;"></i>
+              <span style="color: rgba(255,255,255,0.95);" data-i18n="about.legalItems.0">Statut : Association panafricaine à but non lucratif</span>
+            </li>
+            <li class="flex items-start gap-3 pb-4" style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <i data-lucide="scale" aria-hidden="true" style="width:20px;height:20px;color: var(--ava-gold);flex-shrink:0;margin-top:3px;"></i>
+              <span style="color: rgba(255,255,255,0.95);" data-i18n="about.legalItems.1">Cadre légal : Ordonnance n° 66/024 du 21 février 1966 (République centrafricaine)</span>
+            </li>
+            <li class="flex items-start gap-3 pb-4" style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+              <i data-lucide="map-pin" aria-hidden="true" style="width:20px;height:20px;color: var(--ava-gold);flex-shrink:0;margin-top:3px;"></i>
+              <span style="color: rgba(255,255,255,0.95);" data-i18n="about.legalItems.2">Siège fondateur : Avenue Barthélemy Boganda, Bangui, République centrafricaine</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="file-clock" aria-hidden="true" style="width:20px;height:20px;color: var(--ava-gold);flex-shrink:0;margin-top:3px;"></i>
+              <span style="color: rgba(255,255,255,0.95);" data-i18n="about.legalItems.3">Enregistrement officiel en cours</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOADS -->
+    <section class="py-16 md:py-20">
+      <div class="container-ava">
+        <div class="mb-10 reveal">
+          <p class="eyebrow mb-4"><span>Documents</span></p>
+          <h2 class="section-heading" data-i18n="about.downloadsTitle">Téléchargements</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <a href="assets/documents/AVA_Charter.pdf" class="card card-hover reveal" style="text-decoration: none;" download>
+            <div class="pillar-icon mb-4"><i data-lucide="file-text" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-lg mb-2">Charte AVA</h3>
+            <p class="text-sm mb-3" style="color: var(--ava-grey);" data-i18n="about.downloadCharter">Télécharger la Charte (PDF)</p>
+            <span class="badge badge-type"><i data-lucide="download" aria-hidden="true" style="width:14px;height:14px;"></i> PDF</span>
+          </a>
+
+          <a href="assets/documents/AVA_Statutes.pdf" class="card card-hover reveal" style="text-decoration: none;" download>
+            <div class="pillar-icon mb-4"><i data-lucide="file-text" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-lg mb-2">Statuts AVA</h3>
+            <p class="text-sm mb-3" style="color: var(--ava-grey);" data-i18n="about.downloadStatutes">Télécharger les Statuts (PDF)</p>
+            <span class="badge badge-type"><i data-lucide="download" aria-hidden="true" style="width:14px;height:14px;"></i> PDF</span>
+          </a>
+
+          <a href="assets/documents/AVA_Internal_Regulations.pdf" class="card card-hover reveal" style="text-decoration: none;" download>
+            <div class="pillar-icon mb-4"><i data-lucide="file-text" aria-hidden="true"></i></div>
+            <h3 class="font-heading text-lg mb-2">Règlement Intérieur</h3>
+            <p class="text-sm mb-3" style="color: var(--ava-grey);" data-i18n="about.downloadRegulations">Télécharger le Règlement Intérieur (PDF)</p>
+            <span class="badge badge-type"><i data-lucide="download" aria-hidden="true" style="width:14px;height:14px;"></i> PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="site-footer pt-16 pb-8">
+    <div class="container-ava">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="assets/images/logo/logo-ava.png" alt="Logo — African Visionaries Alliance" width="36" height="36" onerror="this.style.display='none'">
+            <span class="font-heading text-xl font-semibold text-white">AVA</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" data-i18n="footer.tagline">Bourses et opportunités pour la jeunesse africaine.</p>
+          <p class="text-xs" style="color: rgba(255,255,255,0.55);" data-i18n="footer.registration">Enregistrement en cours · Ordonnance n° 66/024 (RCA)</p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.navHeading">Navigation</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="index" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="about" data-i18n="nav.about">À Propos</a></li>
+            <li><a href="team" data-i18n="nav.team">Équipe</a></li>
+            <li><a href="opportunities" data-i18n="nav.opportunities">Opportunités</a></li>
+            <li><a href="documents" data-i18n="nav.documents">Documents</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.programsHeading">Programmes</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="about#pathways" data-i18n="nav.pathways">AVA Pathways</a></li>
+            <li><a href="about#academy" data-i18n="nav.academy">AVA Academy</a></li>
+            <li><a href="opportunities" data-i18n="nav.hub">Opportunity Hub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.contactHeading">Contact</h3>
+          <ul class="flex flex-col gap-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;"></i>
+              <span>
+                <span data-i18n="footer.address">Avenue Barthélemy Boganda</span><br>
+                <span data-i18n="footer.city">Bangui, RCA</span>
+              </span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;"></i>
+              <a href="mailto:contact@africanvisionaries.org" data-i18n="footer.email">contact@africanvisionaries.org</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;"></i>
+              <a href="tel:+23672545121" data-i18n="footer.phone">+236 72 54 51 21</a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+            <a href="#" aria-label="X / Twitter"><i data-lucide="twitter" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom pt-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <p>© <span id="footer-year">2026</span> <span data-i18n="footer.copyright">African Visionaries Alliance. Tous droits réservés.</span></p>
+        <div class="flex gap-4">
+          <a href="documents" data-i18n="footer.legal">Mentions légales</a>
+          <a href="documents" data-i18n="footer.privacy">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

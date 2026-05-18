@@ -1,0 +1,155 @@
+# =====================================================================
+# African Visionaries Alliance — .htaccess for Hostinger (Apache)
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1. Default character set
+# ---------------------------------------------------------------------
+AddDefaultCharset UTF-8
+
+# ---------------------------------------------------------------------
+# 2. Custom error pages
+# ---------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ---------------------------------------------------------------------
+# 3. Directory index
+# ---------------------------------------------------------------------
+DirectoryIndex index.html
+
+# Disable directory listing
+Options -Indexes
+
+# ---------------------------------------------------------------------
+# 4. URL rewriting — clean URLs without .html extension
+# ---------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force HTTPS (uncomment after SSL is provisioned on Hostinger)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Force non-www (uncomment if your canonical is the bare domain)
+    # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    # RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+    # Redirect .html -> clean URL (preserves SEO)
+    RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L,NE]
+
+    # Internally append .html when a matching file exists
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^.]+)$ $1.html [L]
+</IfModule>
+
+# ---------------------------------------------------------------------
+# 5. GZIP / DEFLATE compression
+# ---------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject application/x-font application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype application/x-font-ttf font/opentype font/otf font/ttf
+</IfModule>
+
+# ---------------------------------------------------------------------
+# 6. Browser caching (Expires)
+# ---------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault                          "access plus 1 month"
+
+    # HTML — no cache so updates show immediately
+    ExpiresByType text/html                 "access plus 0 seconds"
+
+    # Data — short cache so JSON edits propagate quickly
+    ExpiresByType application/json          "access plus 1 day"
+    ExpiresByType application/xml           "access plus 1 day"
+
+    # CSS, JS — 1 month
+    ExpiresByType text/css                  "access plus 1 month"
+    ExpiresByType application/javascript    "access plus 1 month"
+    ExpiresByType text/javascript           "access plus 1 month"
+
+    # Images — 1 year
+    ExpiresByType image/jpg                 "access plus 1 year"
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/gif                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType image/x-icon              "access plus 1 year"
+
+    # Fonts — 1 year
+    ExpiresByType font/ttf                  "access plus 1 year"
+    ExpiresByType font/otf                  "access plus 1 year"
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+    ExpiresByType application/font-woff     "access plus 1 year"
+
+    # PDF — 1 month
+    ExpiresByType application/pdf           "access plus 1 month"
+</IfModule>
+
+# ---------------------------------------------------------------------
+# 7. Cache-Control headers (modern equivalent)
+# ---------------------------------------------------------------------
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|otf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    <FilesMatch "\.(json|xml)$">
+        Header set Cache-Control "public, max-age=86400"
+    </FilesMatch>
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+
+    # ---------------------------------------------------------------------
+    # 8. Security headers
+    # ---------------------------------------------------------------------
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+    # HSTS (uncomment once HTTPS is verified working)
+    # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+    # Remove server signature
+    Header unset X-Powered-By
+    Header unset Server
+</IfModule>
+
+# ---------------------------------------------------------------------
+# 9. Block access to sensitive files
+# ---------------------------------------------------------------------
+<FilesMatch "(^\.|\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+    Require all denied
+</FilesMatch>
+
+# Block access to .htaccess itself
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# ---------------------------------------------------------------------
+# 10. Proper MIME types
+# ---------------------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType application/json                .json
+    AddType image/svg+xml                   .svg
+    AddType application/font-woff           .woff
+    AddType application/font-woff2          .woff2
+    AddType application/vnd.ms-fontobject   .eot
+    AddType application/x-font-ttf          .ttf
+    AddType application/x-font-otf          .otf
+</IfModule>

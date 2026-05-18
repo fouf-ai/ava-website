@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#035a42">
+
+  <title>Opportunity Hub — Bourses, fellowships, stages, emplois | AVA</title>
+  <meta name="description" content="Catalogue multilingue de bourses, fellowships, stages et emplois pour la jeunesse africaine. Vérifié, actualisé, panafricain. Filtrez par type, région, niveau, langue.">
+
+  <link rel="canonical" href="https://ava-africa.me/opportunities">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Opportunity Hub — AVA">
+  <meta property="og:description" content="Catalogue panafricain de bourses et opportunités internationales.">
+  <meta property="og:url" content="https://ava-africa.me/opportunities">
+  <meta property="og:image" content="https://ava-africa.me/assets/images/logo/logo-ava.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ava-green-dark':  '#035a42',
+            'ava-green-light': '#19ab90',
+            'ava-gold':        '#fea61b',
+            'ava-red':         '#e72931',
+            'ava-brown':       '#492412',
+            'ava-ink':         '#1f2937',
+            'ava-grey':        '#6b7280',
+            'ava-mist':        '#f5f5f5',
+            'ava-paper':       '#ffffff',
+            'ava-line':        '#e5e7eb',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'Georgia', 'serif'],
+            body:    ['Inter', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: { 'content': '1200px' }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "African Visionaries Alliance",
+    "url": "https://ava-africa.me",
+    "logo": "https://ava-africa.me/assets/images/logo/logo-ava.png"
+  }
+  </script>
+</head>
+
+<body class="font-body text-ava-ink antialiased bg-ava-paper">
+
+  <a href="#main-content" class="skip-link" data-i18n="nav.skipToContent">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container-ava flex items-center justify-between py-4">
+      <a href="index" class="logo flex items-center gap-2" aria-label="African Visionaries Alliance — Accueil">
+        <img src="assets/images/logo/logo-ava.png" alt="Logo — African Visionaries Alliance" width="36" height="36" onerror="this.style.display='none'">
+        <span>AVA</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Navigation principale">
+        <a href="index" class="nav-link" data-i18n="nav.home">Accueil</a>
+        <a href="about" class="nav-link" data-i18n="nav.about">À Propos</a>
+        <div class="dropdown">
+          <button type="button" class="nav-link inline-flex items-center gap-1" aria-haspopup="true" aria-expanded="false">
+            <span data-i18n="nav.programs">Nos Programmes</span>
+            <i data-lucide="chevron-down" style="width:14px;height:14px;" aria-hidden="true"></i>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="about#pathways" role="menuitem" data-i18n="nav.pathways">AVA Pathways</a>
+            <a href="about#academy" role="menuitem" data-i18n="nav.academy">AVA Academy</a>
+            <a href="opportunities" role="menuitem" data-i18n="nav.hub">Opportunity Hub</a>
+          </div>
+        </div>
+        <a href="opportunities" class="nav-link is-active" data-i18n="nav.opportunities">Opportunités</a>
+        <a href="team" class="nav-link" data-i18n="nav.team">Équipe</a>
+        <a href="documents" class="nav-link" data-i18n="nav.documents">Documents</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" data-lang-switch="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang-switch="ar" aria-pressed="false">AR</button>
+        </div>
+        <button type="button" class="lg:hidden p-2 rounded-md hover:bg-ava-mist" data-mobile-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Menu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-backdrop" data-mobile-backdrop aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" data-mobile-drawer aria-hidden="true" aria-label="Menu mobile">
+    <div class="flex items-center justify-between mb-6">
+      <span class="font-heading font-semibold text-ava-green-dark text-lg">AVA</span>
+      <button type="button" class="p-2 rounded-md hover:bg-ava-mist" data-mobile-close aria-label="Fermer">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col gap-1" aria-label="Navigation mobile">
+      <a href="index" class="nav-link py-2.5" data-i18n="nav.home">Accueil</a>
+      <a href="about" class="nav-link py-2.5" data-i18n="nav.about">À Propos</a>
+      <a href="opportunities" class="nav-link py-2.5 is-active" data-i18n="nav.opportunities">Opportunités</a>
+      <a href="team" class="nav-link py-2.5" data-i18n="nav.team">Équipe</a>
+      <a href="documents" class="nav-link py-2.5" data-i18n="nav.documents">Documents</a>
+    </nav>
+    <div class="mt-8 pt-6 border-t border-ava-line">
+      <p class="text-xs font-semibold uppercase tracking-wider text-ava-grey mb-3" data-i18n="nav.programs">Nos Programmes</p>
+      <a href="about#pathways" class="nav-link py-2 block" data-i18n="nav.pathways">AVA Pathways</a>
+      <a href="about#academy" class="nav-link py-2 block" data-i18n="nav.academy">AVA Academy</a>
+      <a href="opportunities" class="nav-link py-2 block" data-i18n="nav.hub">Opportunity Hub</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero-bg">
+      <div class="container-ava py-16 md:py-20 relative z-10">
+        <p class="eyebrow mb-4"><span>Opportunity Hub</span></p>
+        <h1 class="font-heading text-4xl md:text-5xl font-semibold mb-4" style="color: var(--ava-green-dark);" data-i18n="opportunities.heading">Opportunity Hub</h1>
+        <p class="text-lg md:text-xl max-w-3xl leading-relaxed" style="color: var(--ava-grey);" data-i18n="opportunities.subheading">Catalogue multilingue de bourses, fellowships, stages et emplois — vérifié, actualisé, panafricain.</p>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="py-10 md:py-12 border-b border-ava-line">
+      <div class="container-ava">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <h2 class="font-heading text-xl" data-i18n="opportunities.filtersHeading">Filtrer les opportunités</h2>
+          <div class="flex items-center gap-3">
+            <p id="opportunities-count" class="text-sm" style="color: var(--ava-grey);">—</p>
+            <button type="button" class="btn btn-ghost text-sm" data-filter-reset>
+              <i data-lucide="rotate-ccw" aria-hidden="true" style="width:16px;height:16px;"></i>
+              <span data-i18n="opportunities.resetFilters">Réinitialiser</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Filter group: type -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--ava-grey);" data-i18n="opportunities.filterType">Type</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="type" role="group" aria-label="Type d'opportunité">
+            <button type="button" class="chip is-active" data-filter-value="all" aria-pressed="true" data-i18n="opportunities.filterAll">Tout</button>
+            <button type="button" class="chip" data-filter-value="scholarship" aria-pressed="false" data-i18n="opportunities.types.scholarship">Bourse</button>
+            <button type="button" class="chip" data-filter-value="fellowship" aria-pressed="false" data-i18n="opportunities.types.fellowship">Fellowship</button>
+            <button type="button" class="chip" data-filter-value="internship" aria-pressed="false" data-i18n="opportunities.types.internship">Stage</button>
+            <button type="button" class="chip" data-filter-value="job" aria-pressed="false" data-i18n="opportunities.types.job">Emploi</button>
+            <button type="button" class="chip" data-filter-value="training" aria-pressed="false" data-i18n="opportunities.types.training">Formation</button>
+          </div>
+        </div>
+
+        <!-- Filter group: region -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--ava-grey);" data-i18n="opportunities.filterRegion">Région</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="region" role="group" aria-label="Région africaine">
+            <button type="button" class="chip is-active" data-filter-value="all" aria-pressed="true" data-i18n="opportunities.filterAll">Tout</button>
+            <button type="button" class="chip" data-filter-value="west" aria-pressed="false" data-i18n="opportunities.regions.west">Afrique de l'Ouest</button>
+            <button type="button" class="chip" data-filter-value="central" aria-pressed="false" data-i18n="opportunities.regions.central">Afrique Centrale</button>
+            <button type="button" class="chip" data-filter-value="east" aria-pressed="false" data-i18n="opportunities.regions.east">Afrique de l'Est</button>
+            <button type="button" class="chip" data-filter-value="north" aria-pressed="false" data-i18n="opportunities.regions.north">Afrique du Nord</button>
+            <button type="button" class="chip" data-filter-value="southern" aria-pressed="false" data-i18n="opportunities.regions.southern">Afrique Australe</button>
+            <button type="button" class="chip" data-filter-value="panafrican" aria-pressed="false" data-i18n="opportunities.regions.panafrican">Panafricain</button>
+          </div>
+        </div>
+
+        <!-- Filter group: level -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--ava-grey);" data-i18n="opportunities.filterLevel">Niveau</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="level" role="group" aria-label="Niveau d'études">
+            <button type="button" class="chip is-active" data-filter-value="all" aria-pressed="true" data-i18n="opportunities.filterAll">Tout</button>
+            <button type="button" class="chip" data-filter-value="bachelor" aria-pressed="false" data-i18n="opportunities.levels.bachelor">Licence</button>
+            <button type="button" class="chip" data-filter-value="masters" aria-pressed="false" data-i18n="opportunities.levels.masters">Master</button>
+            <button type="button" class="chip" data-filter-value="phd" aria-pressed="false" data-i18n="opportunities.levels.phd">Doctorat</button>
+            <button type="button" class="chip" data-filter-value="professional" aria-pressed="false" data-i18n="opportunities.levels.professional">Professionnel</button>
+          </div>
+        </div>
+
+        <!-- Filter group: language -->
+        <div class="mb-5">
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--ava-grey);" data-i18n="opportunities.filterLanguage">Langue</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="language" role="group" aria-label="Langue de l'opportunité">
+            <button type="button" class="chip is-active" data-filter-value="all" aria-pressed="true" data-i18n="opportunities.filterAll">Tout</button>
+            <button type="button" class="chip" data-filter-value="french" aria-pressed="false" data-i18n="opportunities.languages.french">Français</button>
+            <button type="button" class="chip" data-filter-value="english" aria-pressed="false" data-i18n="opportunities.languages.english">Anglais</button>
+            <button type="button" class="chip" data-filter-value="arabic" aria-pressed="false" data-i18n="opportunities.languages.arabic">Arabe</button>
+          </div>
+        </div>
+
+        <!-- Filter group: funding -->
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--ava-grey);" data-i18n="opportunities.filterFunding">Financement</p>
+          <div class="flex flex-wrap gap-2" data-filter-group="funding" role="group" aria-label="Type de financement">
+            <button type="button" class="chip is-active" data-filter-value="all" aria-pressed="true" data-i18n="opportunities.filterAll">Tout</button>
+            <button type="button" class="chip" data-filter-value="full" aria-pressed="false" data-i18n="opportunities.funding.full">Complet</button>
+            <button type="button" class="chip" data-filter-value="partial" aria-pressed="false" data-i18n="opportunities.funding.partial">Partiel</button>
+            <button type="button" class="chip" data-filter-value="tuition" aria-pressed="false" data-i18n="opportunities.funding.tuition">Frais de scolarité</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS GRID -->
+    <section class="py-12 md:py-16">
+      <div class="container-ava">
+        <div id="opportunities-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Cartes injectées dynamiquement par filters.js -->
+        </div>
+
+        <div id="opportunities-empty" hidden class="text-center py-16">
+          <i data-lucide="search-x" aria-hidden="true" style="width:48px;height:48px;color: var(--ava-grey);margin: 0 auto 1rem;"></i>
+          <p class="text-lg" style="color: var(--ava-grey);" data-i18n="opportunities.noResults">Aucune opportunité ne correspond aux filtres sélectionnés.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHING CTA -->
+    <section class="py-16 md:py-20" style="background: var(--ava-green-dark); color: #fff;">
+      <div class="container-ava">
+        <div class="max-w-3xl mx-auto text-center reveal">
+          <p class="eyebrow mb-4 justify-center" style="display:inline-flex; color: var(--ava-gold);"><span>AVA Pathways</span></p>
+          <h2 class="font-heading text-3xl md:text-4xl mb-4" style="color: #fff;">Une opportunité vous intéresse ?</h2>
+          <p class="text-base mb-8 leading-relaxed" style="color: rgba(255,255,255,0.85);">Notre programme AVA Pathways propose un coaching de candidature personnalisé, en 1-on-1, gratuit pour les jeunes africains éligibles.</p>
+          <a href="about#pathways" class="btn btn-gold">
+            <i data-lucide="graduation-cap" aria-hidden="true" style="width:18px;height:18px;"></i>
+            <span data-i18n="opportunities.getCoached">Être coaché sur cette candidature</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer pt-16 pb-8">
+    <div class="container-ava">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <img src="assets/images/logo/logo-ava.png" alt="" width="36" height="36" onerror="this.style.display='none'">
+            <span class="font-heading text-xl font-semibold text-white">AVA</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" data-i18n="footer.tagline">Bourses et opportunités pour la jeunesse africaine.</p>
+          <p class="text-xs" style="color: rgba(255,255,255,0.55);" data-i18n="footer.registration">Enregistrement en cours · Ordonnance n° 66/024 (RCA)</p>
+        </div>
+        <div>
+          <h3 data-i18n="footer.navHeading">Navigation</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="index" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="about" data-i18n="nav.about">À Propos</a></li>
+            <li><a href="team" data-i18n="nav.team">Équipe</a></li>
+            <li><a href="opportunities" data-i18n="nav.opportunities">Opportunités</a></li>
+            <li><a href="documents" data-i18n="nav.documents">Documents</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.programsHeading">Programmes</h3>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li><a href="about#pathways" data-i18n="nav.pathways">AVA Pathways</a></li>
+            <li><a href="about#academy" data-i18n="nav.academy">AVA Academy</a></li>
+            <li><a href="opportunities" data-i18n="nav.hub">Opportunity Hub</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer.contactHeading">Contact</h3>
+          <ul class="flex flex-col gap-3 text-sm">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;"></i>
+              <span>
+                <span data-i18n="footer.address">Avenue Barthélemy Boganda</span><br>
+                <span data-i18n="footer.city">Bangui, RCA</span>
+              </span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;"></i>
+              <a href="mailto:contact@africanvisionaries.org" data-i18n="footer.email">contact@africanvisionaries.org</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" aria-hidden="true" style="width:16px;height:16px;flex-shrink:0;"></i>
+              <a href="tel:+23672545121" data-i18n="footer.phone">+236 72 54 51 21</a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-3 mt-4">
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+            <a href="#" aria-label="X / Twitter"><i data-lucide="twitter" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true" style="width:20px;height:20px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-6 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <p>© <span id="footer-year">2026</span> <span data-i18n="footer.copyright">African Visionaries Alliance. Tous droits réservés.</span></p>
+        <div class="flex gap-4">
+          <a href="documents" data-i18n="footer.legal">Mentions légales</a>
+          <a href="documents" data-i18n="footer.privacy">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/filters.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
