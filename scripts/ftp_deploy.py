@@ -3,6 +3,17 @@ import os
 import sys
 from pathlib import Path
 
+
+class FixedPassiveFTP(ftplib.FTP):
+    """Force data connections to use the server's public IP instead of
+    the private NAT address returned in the PASV response.
+    This fixes 'max-retries exceeded' and data-connection timeouts on
+    shared hosting behind NAT (Hostinger, cPanel, etc.)."""
+    def makepasv(self):
+        _, port = super().makepasv()
+        return self.host, port   # use control-connection host, not PASV IP
+
+
 host     = os.environ['FTP_HOST']
 user     = os.environ['FTP_USER']
 password = os.environ['FTP_PASS']
@@ -10,12 +21,12 @@ base     = os.environ['FTP_DIR'].strip('/')
 
 SKIP = {'.git', '.github', 'scripts'}
 
-print(f"Connecting to {host} ...")
-ftp = ftplib.FTP()
+print(f"Connecting to {host}...")
+ftp = FixedPassiveFTP()
 ftp.connect(host, 21, timeout=60)
 ftp.login(user, password)
 ftp.set_pasv(True)
-print("Connected.")
+print("Connected and logged in.")
 
 made = set()
 
@@ -54,6 +65,8 @@ for f in sorted(Path('.').rglob('*')):
         fail.append(rel)
 
 ftp.quit()
-print(f"\nDone: {ok} uploaded, {len(fail)} failed")
+print(f"\nResult: {ok} uploaded, {len(fail)} failed")
 if fail:
+    for fl in fail:
+        print(f"  FAILED: {fl}", file=sys.stderr)
     sys.exit(1)
