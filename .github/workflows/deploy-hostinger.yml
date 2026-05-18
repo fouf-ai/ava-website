@@ -12,16 +12,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Sync files to Hostinger (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
-        with:
-          server: ${{ secrets.HOSTINGER_HOST }}
-          username: ${{ secrets.HOSTINGER_USER }}
-          password: ${{ secrets.HOSTINGER_PASSWORD }}
-          port: 21
-          protocol: ftp
-          local-dir: ./
-          server-dir: ${{ secrets.HOSTINGER_REMOTE_DIR }}
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Deploy via FTP
+        run: |
+          lftp -e "
+            set ftp:ssl-allow no;
+            set ssl:verify-certificate no;
+            open ftp://${{ secrets.HOSTINGER_HOST }};
+            user ${{ secrets.HOSTINGER_USER }} ${{ secrets.HOSTINGER_PASSWORD }};
+            mirror --reverse --delete --verbose --parallel=5 ./ ${{ secrets.HOSTINGER_REMOTE_DIR }};
+            quit
+          "
 
       - name: Deployment finished
         run: echo "Deployment to Hostinger complete"
