@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync files to Hostinger (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           server: ${{ secrets.HOSTINGER_HOST }}
           username: ${{ secrets.HOSTINGER_USER }}
@@ -22,7 +22,6 @@ jobs:
           protocol: ftp
           local-dir: ./
           server-dir: ${{ secrets.HOSTINGER_REMOTE_DIR }}
-          git-ftp-args: --insecure
 
       - name: Deployment finished
         run: echo "Deployment to Hostinger complete"
