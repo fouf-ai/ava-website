@@ -105,10 +105,11 @@
           '</article>'
         ].join('');
       }).join('');
+    }); // closes tiers.forEach
 
     paintIcons();
     window.AVA && window.AVA.utils && window.AVA.utils.initScrollReveal();
-  }
+  } // closes renderTeam
 
   function initTeamPage() {
     const anchor = document.getElementById('team-tier-1');

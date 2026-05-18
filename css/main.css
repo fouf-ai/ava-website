@@ -284,24 +284,83 @@ html[dir="rtl"] .team-card .team-photo-badge {
 .badge-expired   { background: var(--ava-mist);           color: var(--ava-grey); }
 
 /* ---------- 8. HERO ---------- */
+/*
+ * Two-column layout: white left (text) + photo right (all faces visible).
+ * The photo lives in ::before, scoped to the right 60% of the section.
+ * A ::after gradient fades white into the photo at the boundary.
+ */
 .hero-bg {
   position: relative;
-  background:
-    radial-gradient(1200px 600px at 85% -10%, rgba(254, 166, 27, 0.15), transparent 60%),
-    radial-gradient(900px 500px at -10% 80%, rgba(25, 171, 144, 0.12), transparent 60%),
-    linear-gradient(180deg, #ffffff 0%, #fbfbf9 100%);
+  background: #fff;
   overflow: hidden;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
 }
+
+/* Photo panel — right 60% only */
 .hero-bg::before {
   content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(to right, rgba(3, 90, 66, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(3, 90, 66, 0.05) 1px, transparent 1px);
-  background-size: 64px 64px;
+  position: absolute;
+  top: 0; right: 0;
+  width: 62%;
+  height: 100%;
+  background: url('../assets/images/hero/AVA.jpeg') center top / cover no-repeat;
   pointer-events: none;
-  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8), transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,0.8), transparent 70%);
+}
+
+/* Soft fade from white into the photo */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 36%;
+  width: 18%;
+  height: 100%;
+  background: linear-gradient(to right, #fff 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Text sits on the clean white left side — no card needed */
+.hero-bg .container-ava {
+  position: relative;
+  z-index: 2;
+}
+.hero-bg .max-w-3xl {
+  max-width: min(44%, 38rem);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Mobile: full-width photo + semi-transparent card over it */
+@media (max-width: 1023px) {
+  .hero-bg {
+    background: #edf2ed;
+    min-height: 480px;
+    align-items: flex-end;
+  }
+  .hero-bg::before {
+    width: 100%;
+    background: url('../assets/images/hero/AVA.jpeg') center 15% / cover no-repeat;
+  }
+  .hero-bg::after {
+    left: 0; width: 100%;
+    background: linear-gradient(to bottom, transparent 35%, rgba(255,255,255,0.97) 72%);
+  }
+  .hero-bg .container-ava {
+    padding-bottom: 2rem;
+  }
+  .hero-bg .max-w-3xl {
+    max-width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.75rem;
+  }
+}
+@media (max-width: 639px) {
+  .hero-bg { min-height: 400px; }
 }
 
 .eyebrow {
@@ -575,16 +634,23 @@ html[dir="rtl"] .team-card .team-photo-badge {
 }
 
 /* ---------- 15. RTL / ARABIC SUPPORT ---------- */
-[dir="rtl"] body { font-family: 'Inter', 'Noto Sans Arabic', system-ui, sans-serif; }
+[dir="rtl"] body { font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif; }
 [dir="rtl"] .eyebrow::before {
   margin-left: 0.5rem;
   margin-right: 0;
 }
 [dir="rtl"] .nav-link.is-active::after { left: 0; right: 0; }
+[dir="rtl"] .dropdown-menu { left: auto; right: 0; }
 
 /* ---------- 16. UTILITY ---------- */
 .text-balance { text-wrap: balance; }
 .text-pretty  { text-wrap: pretty; }
+
+/* No-JS fallback: reveal items immediately if scripts haven't loaded */
+html:not(.js-ready) .reveal { opacity: 1; transform: none; }
+
+/* Scroll margin for anchor targets with sticky header */
+[id] { scroll-margin-top: 88px; }
 
 /* Underline on links inside prose */
 .prose-ava a {
@@ -597,10 +663,12 @@ html[dir="rtl"] .team-card .team-photo-badge {
 }
 .prose-ava a:hover { text-decoration-color: var(--ava-gold); }
 
-/* Image lazy-load fade */
-img[loading="lazy"] {
+/* Image lazy-load fade — only applied before load completes */
+img[loading="lazy"]:not(.is-loaded):not(.loaded) {
   opacity: 0;
   transition: opacity 400ms ease;
 }
 img[loading="lazy"].is-loaded,
 img[loading="lazy"].loaded { opacity: 1; }
+/* Eagerly loaded images are always visible */
+img:not([loading="lazy"]) { opacity: 1; }

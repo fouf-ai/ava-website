@@ -25,9 +25,17 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
-    items.forEach(function (el) { io.observe(el); });
+    items.forEach(function (el) {
+      // Immediately reveal elements already in the viewport (above the fold)
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('is-visible');
+      } else {
+        io.observe(el);
+      }
+    });
   }
 
   /**
@@ -77,6 +85,7 @@
   }
 
   function init() {
+    document.documentElement.classList.add('js-ready');
     initScrollReveal();
     initLazyImages();
   }

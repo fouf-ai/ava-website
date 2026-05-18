@@ -1,5 +1,5 @@
 # robots.txt — African Visionaries Alliance
-# https://ava-africa.me
+# https://africanvisionaries.org
 
 User-agent: *
 Allow: /
@@ -12,4 +12,4 @@ Disallow: /data/
 Disallow: /404
 
 # Sitemap
-Sitemap: https://ava-africa.me/sitemap.xml
+Sitemap: https://africanvisionaries.org/sitemap.xml

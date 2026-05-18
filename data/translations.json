@@ -67,6 +67,7 @@
     "newsletter": {
       "heading": "Restez informés",
       "subheading": "Une lettre mensuelle. Pas de spam. Désinscription en un clic.",
+      "emailLabel": "Adresse e-mail",
       "placeholder": "votre.email@exemple.com",
       "button": "S'abonner",
       "consent": "En vous abonnant, vous acceptez de recevoir nos communications."
@@ -91,6 +92,9 @@
         "Pas d'incubation de startups ni de hackathons",
         "Pas de conseil technologique généraliste"
       ],
+      "perimeterTitle": "Notre périmètre, sans ambiguïté",
+      "perimeterSubheading": "La discipline de la focalisation est une de nos sept valeurs fondatrices.",
+      "programsTitle": "Trois programmes, un parcours cohérent",
       "valuesTitle": "Valeurs fondatrices",
       "valuesIntro": "Sept principes inscrits à l'Article 4 de notre Charte.",
       "values": [
@@ -106,7 +110,7 @@
       "legalItems": [
         "Statut : Association panafricaine à but non lucratif",
         "Cadre légal : Ordonnance n° 66/024 du 21 février 1966 (République centrafricaine)",
-        "Siège fondateur : Avenue Barthélemy Boganda, Bangui, République centrafricaine",
+        "Siège fondateur : Av. Barthelemy Boganda, Bangui, République centrafricaine",
         "Enregistrement officiel en cours"
       ],
       "governanceTitle": "Structure de gouvernance",
@@ -206,7 +210,7 @@
       "navHeading": "Navigation",
       "programsHeading": "Programmes",
       "contactHeading": "Contact",
-      "address": "Avenue Barthélemy Boganda",
+      "address": "Av. Barthelemy Boganda",
       "city": "Bangui, République centrafricaine",
       "email": "contact@africanvisionaries.org",
       "phone": "+236 72 54 51 21",
@@ -291,6 +295,7 @@
     "newsletter": {
       "heading": "Stay informed",
       "subheading": "Monthly newsletter. No spam. One-click unsubscribe.",
+      "emailLabel": "Email address",
       "placeholder": "your.email@example.com",
       "button": "Subscribe",
       "consent": "By subscribing, you agree to receive our communications."
@@ -315,6 +320,9 @@
         "No startup incubation or hackathons",
         "No general technology consulting"
       ],
+      "perimeterTitle": "Our scope, without ambiguity",
+      "perimeterSubheading": "The discipline of focus is one of our seven founding values.",
+      "programsTitle": "Three programmes, one coherent pathway",
       "valuesTitle": "Founding values",
       "valuesIntro": "Seven principles enshrined in Article 4 of our Charter.",
       "values": [
@@ -330,7 +338,7 @@
       "legalItems": [
         "Status: Pan-African non-profit association",
         "Legal framework: Ordinance No. 66/024 of 21 February 1966 (Central African Republic)",
-        "Founding seat: Avenue Barthélemy Boganda, Bangui, Central African Republic",
+        "Founding seat: Av. Barthelemy Boganda, Bangui, Central African Republic",
         "Official registration in progress"
       ],
       "governanceTitle": "Governance structure",
@@ -430,7 +438,7 @@
       "navHeading": "Navigation",
       "programsHeading": "Programs",
       "contactHeading": "Contact",
-      "address": "Avenue Barthélemy Boganda",
+      "address": "Av. Barthelemy Boganda",
       "city": "Bangui, Central African Republic",
       "email": "contact@africanvisionaries.org",
       "phone": "+236 72 54 51 21",
@@ -489,9 +497,10 @@
         "title": "مركز فرص AVA",
         "description": "كتالوج متعدد اللغات (فرنسي/إنجليزي/عربي) للمنح الدراسية والزمالات والتدريب والوظائف المتاحة للشباب الأفريقي."
       },
-     "emergencies": {
-  "title": "الاستجابة للطوارئ الاجتماعية",
-  "description": "تعبئة الشباب لمواجهة الطوارئ الاجتماعية الأفريقية: الأزمات التعليمية، تهجير الطلاب، انقطاع الوصول إلى الفرص."
+      "emergencies": {
+        "title": "الاستجابة للطوارئ الاجتماعية",
+        "description": "تعبئة الشباب لمواجهة الطوارئ الاجتماعية الأفريقية: الأزمات التعليمية، تهجير الطلاب، انقطاع الوصول إلى الفرص."
+      }
     },
     "impact": {
       "heading": "من أين نبدأ",
@@ -514,6 +523,7 @@
     "newsletter": {
       "heading": "ابقَ على اطلاع",
       "subheading": "نشرة شهرية. بلا إزعاج. إلغاء الاشتراك بنقرة واحدة.",
+      "emailLabel": "البريد الإلكتروني",
       "placeholder": "بريدك@مثال.com",
       "button": "اشتراك",
       "consent": "بالاشتراك، فإنك توافق على تلقي مراسلاتنا."
@@ -538,6 +548,9 @@
         "لا احتضان للشركات الناشئة ولا هاكاثونات",
         "لا استشارات تكنولوجية عامة"
       ],
+      "perimeterTitle": "نطاق عملنا، بلا غموض",
+      "perimeterSubheading": "انضباط التركيز هو إحدى قيمنا التأسيسية السبع.",
+      "programsTitle": "ثلاثة برامج، مسار واحد متكامل",
       "valuesTitle": "القيم المؤسِّسة",
       "valuesIntro": "سبعة مبادئ مكرّسة في المادة 4 من ميثاقنا.",
       "values": [
