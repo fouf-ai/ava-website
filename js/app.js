@@ -134,26 +134,39 @@
       .catch(function (err) { console.error('AVA app: team.json failed', err); });
   }
 
-  /**
-   * Simple newsletter form handler — local feedback only, no backend.
-   */
   function initNewsletterForm() {
     const form = document.getElementById('newsletter-form');
     if (!form) return;
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       const status = document.getElementById('newsletter-status');
-      const input = form.querySelector('input[type="email"]');
-      if (input && input.value) {
-        if (status) {
-          status.textContent = getLang() === 'en'
-            ? 'Thank you — we will keep you posted.'
-            : getLang() === 'ar' ? 'شكراً — سنبقيك على اطلاع.'
-            : 'Merci — nous vous tiendrons informé(e).';
-          status.classList.remove('hidden');
-        }
-        input.value = '';
-      }
+      const input  = form.querySelector('input[type="email"]');
+      const btn    = form.querySelector('button[type="submit"]');
+      if (!input || !input.value) return;
+
+      const body = new URLSearchParams({ email: input.value, lang: getLang() });
+      if (btn) btn.disabled = true;
+
+      fetch('src/handlers/newsletter.php', { method: 'POST', body: body })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (status) {
+            status.textContent = data.message || '';
+            status.classList.remove('hidden');
+            status.style.color = data.ok ? '#a7f3d0' : '#fca5a5';
+          }
+          if (data.ok) input.value = '';
+        })
+        .catch(function () {
+          if (status) {
+            status.textContent = getLang() === 'en' ? 'Connection error. Please try again.' : 'Erreur de connexion. Veuillez réessayer.';
+            status.classList.remove('hidden');
+            status.style.color = '#fca5a5';
+          }
+        })
+        .finally(function () {
+          if (btn) btn.disabled = false;
+        });
     });
   }
 
