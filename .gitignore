@@ -1,0 +1,16 @@
+# Credentials — NEVER commit
+src/config.php
+.env
+*.env
+
+# PHP cache
+/vendor/
+*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
